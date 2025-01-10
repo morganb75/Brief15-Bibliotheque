@@ -1,9 +1,9 @@
-Pas de problème ! Voici votre fichier `README.md` avec une mise en page améliorée pour GitHub :
 
-```markdown
-# Brief 15 - Création d'une application pour la gestion d'une bibliothèque
+# Brief 15 - Création d'une API pour la gestion d'une bibliothèque
 
-Lancer le projet Spring, cela donnera lieu à une migration qui va permettre de requêter les endpoints qui suivent (demandés dans le Brief) et qui sont fonctionnels.
+Dans un premier temps, creer une base de données POSTGRESQL nommée: db_brief15, sinon ajuster la config de votre BDD dans le .yml
+Lancer le projet Spring, cela donnera lieu à une migration qui va permettre de requêter
+les endpoints qui suivent (demandés dans le Brief) et qui sont fonctionnels.
 
 ## PARCOURS GESTION DES LIVRES
 ### ENDPOINTS
@@ -11,7 +11,7 @@ Lancer le projet Spring, cela donnera lieu à une migration qui va permettre de 
   Récupération de la liste de tous les livres
 - **GET** `http://localhost:8080/api/livre/disponibles`  
   Récupération de la liste des livres disponibles
-- **POST** `http://localhost:8080/api/livre/liste`  
+- **POST** `http://localhost:8080/api/livre`  
   Création d'un livre  
   **BODY de la Requête :**
   ```json
@@ -21,7 +21,8 @@ Lancer le projet Spring, cela donnera lieu à une migration qui va permettre de 
     "disponibilite": true,
     "genres": [
       {
-        "libelle": "test genre"
+        "id":3,
+        "libelle": "Mystery"
       }
     ],
     "emprunts": []
@@ -81,8 +82,3 @@ Lancer le projet Spring, cela donnera lieu à une migration qui va permettre de 
   ```
 - **PUT** `http://localhost:8080/api/emprunts/retour/{id}`  
   Retour d'emprunt
-```
-
-Vous pouvez copier ce contenu dans votre fichier `README.md` pour qu'il soit bien mis en page sur GitHub. 😊
-
-Y a-t-il autre chose avec laquelle je peux vous aider ?

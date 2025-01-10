@@ -23,25 +23,25 @@ INSERT INTO Genre (libelle) VALUES ('Thriller');
 
 -- Création des livres
 INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('1984', 'George Orwell', true);
-INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Dune', 'Frank Herbert', true);
+INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Dune', 'Frank Herbert', false);
 INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Le Seigneur des Anneaux', 'J.R.R. Tolkien', true);
-INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Harry Potter à l\''école des sorciers', 'J.K. Rowling', true);
+INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Harry Potter à l\''école des sorciers', 'J.K. Rowling', false);
 INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Le Meurtre de Roger Ackroyd', 'Agatha Christie', true);
-INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Les Misérables', 'Victor Hugo', true);
+INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Les Misérables', 'Victor Hugo', false);
 INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Le Comte de Monte-Cristo', 'Alexandre Dumas', true);
-INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('La Peste', 'Albert Camus', true);
+INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('La Peste', 'Albert Camus', false);
 INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('L\''Étranger', 'Albert Camus', true);
-INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Cyrano de Bergerac', 'Edmond Rostand', true);
+INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Cyrano de Bergerac', 'Edmond Rostand', false);
 INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Le Petit Prince', 'Antoine de Saint-Exupéry', true);
-INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Madame Bovary', 'Gustave Flaubert', true);
+INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Madame Bovary', 'Gustave Flaubert', false);
 INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Les Fleurs du mal', 'Charles Baudelaire', true);
-INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('À la recherche du temps perdu', 'Marcel Proust', true);
+INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('À la recherche du temps perdu', 'Marcel Proust', false);
 INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('L\''Éducation sentimentale', 'Gustave Flaubert', true);
-INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Bel-Ami', 'Guy de Maupassant', true);
+INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Bel-Ami', 'Guy de Maupassant', false);
 INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Germinal', 'Émile Zola', true);
-INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Notre-Dame de Paris', 'Victor Hugo', true);
+INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Notre-Dame de Paris', 'Victor Hugo', false);
 INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('Le Rouge et le Noir', 'Stendhal', true);
-INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('La Chartreuse de Parme', 'Stendhal', true);
+INSERT INTO Livre (titre, auteur, disponibilite) VALUES ('La Chartreuse de Parme', 'Stendhal', false);
 
 -- Association des livres avec les genres
 INSERT INTO livre_genre (livre_id, genre_id) VALUES (1, 1);

@@ -6,7 +6,6 @@ import fr.morgan.brief15bibliotheque.repository.GenreRepository;
 import fr.morgan.brief15bibliotheque.service.interfaces.EmprunteurService;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -27,20 +26,5 @@ public class EmprunteurServiceImpl implements EmprunteurService {
     @Override
     public List<Emprunteur> listeEmprunteurs() {
         return emprunteurRepository.findAll();
-    }
-
-    @Override
-    public Optional<Emprunteur> consulterEmprunteur(Long id) {
-        return emprunteurRepository.findById(id);
-    }
-
-    @Override
-    public void supprimerEmprunteur(Long id) {
-        emprunteurRepository.deleteById(id);
-    }
-
-    @Override
-    public Emprunteur modifierEmprunteur(Emprunteur emprunteur) {
-        return null;
     }
 }

@@ -1,7 +1,7 @@
 package fr.morgan.brief15bibliotheque.controller;
 
 import fr.morgan.brief15bibliotheque.model.Genre;
-import fr.morgan.brief15bibliotheque.repository.GenreRepository;
+import fr.morgan.brief15bibliotheque.service.interfaces.GenreService;
 
 import java.util.List;
 
@@ -14,19 +14,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/genres")
 public class GenreController {
 
-    private final GenreRepository genreRepository;
+private final GenreService genreService;
 
-    public GenreController(GenreRepository genreRepository) {
-        this.genreRepository = genreRepository;
+    public GenreController(GenreService genreService) {
+        this.genreService = genreService;
     }
 
     @GetMapping
     public List<Genre> getAllGenres() {
-        return genreRepository.findAll();
+        return genreService.listerGenres();
     }
 
     @PostMapping
     public void creerGenre(Genre genre){
-        genreRepository.save(genre);
+        genreService.crerGenre(genre);
     }
 }

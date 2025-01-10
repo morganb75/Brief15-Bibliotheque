@@ -36,11 +36,10 @@ public class Livre {
     private String auteur;
     @Column(nullable = false)
     private boolean disponibilite;
-    @ManyToMany(cascade =CascadeType.PERSIST)
+    @ManyToMany
     @JoinTable(name = "livre_genre",
     joinColumns = @JoinColumn(name = "livre_id"),
     inverseJoinColumns = @JoinColumn(name = "genre_id"))
-    @Column(nullable = false)
     private List<Genre> genres;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "livre_id")

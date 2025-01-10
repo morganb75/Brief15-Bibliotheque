@@ -9,10 +9,8 @@ import fr.morgan.brief15bibliotheque.repository.LivreRepository;
 import fr.morgan.brief15bibliotheque.service.interfaces.EmpruntService;
 
 import java.lang.module.FindException;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -46,16 +44,6 @@ public class EmpruntServiceImpl implements EmpruntService {
     @Override
     public List<Emprunt> consulterEmprunts() {
         return empruntRepository.findAll();
-    }
-
-    @Override
-    public Optional<Emprunt> consulterEmprunt(Long id) {
-        return empruntRepository.findById(id);
-    }
-
-    @Override
-    public void effacerEmprunt(Long id) {
-        empruntRepository.deleteById(id);
     }
 
     @Override

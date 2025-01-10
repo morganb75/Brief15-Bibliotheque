@@ -1,9 +1,7 @@
 package fr.morgan.brief15bibliotheque.controller;
 
 import fr.morgan.brief15bibliotheque.model.Emprunt;
-import fr.morgan.brief15bibliotheque.repository.EmpruntRepository;
 import fr.morgan.brief15bibliotheque.service.interfaces.EmpruntService;
-import fr.morgan.brief15bibliotheque.service.interfaces.EmprunteurService;
 
 import java.util.List;
 
